@@ -432,7 +432,10 @@ function kill_players(){
 		window.setTimeout(kill_players,czekajpvp);
 		
 		}
-		else {GAME.emitOrder({a:24,char_id:document.getElementById("player_list_con").children[licznik].children[0].children[1].attributes[2].value,quick:1});
+		else {
+			if (typeof document.getElementById("player_list_con").children[licznik] !== 'undefined') {
+				GAME.emitOrder({a:24,char_id:document.getElementById("player_list_con").children[licznik].children[0].children[1].attributes[2].value,quick:1});
+			}
 		licznik++;
 		czekajka;
 		window.setTimeout(kill_players,czekajpvp);
