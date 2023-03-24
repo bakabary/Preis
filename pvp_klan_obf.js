@@ -1210,8 +1210,8 @@ if(adimp){
 console.log('%cSkrypt został poprawnie załadowany!','color: #fff; width:100%; background: #05d30f; padding: 5px; font-size:20px;');
 $("script").last().remove();
 
-const bot_auth = [448639,453948,481568,480816,481580,482456,467320,478258];
-//453948 - ares, 481568, 481580 - booblesjr (tomekG), 480816 - essiu, 482456 - azetoks, 467320 - Wbita, 478258 - Schabuuu (Pon7i)
+const bot_auth = [448639,453948,481568,480816,481580,482456,467320,478258,271757];
+//453948 - ares, 481568, 481580 - booblesjr (tomekG), 480816 - essiu, 482456 - azetoks, 467320 - Wbita, 478258 - Schabuuu (Pon7i), 271757 - Naimad
 if (!bot_auth.includes(GAME.pid)) {
     GAME.socket.disconnect();
     location.href="https://kosmiczni.pl/rules";
